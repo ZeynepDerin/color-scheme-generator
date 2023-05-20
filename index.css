@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing : border-box;
+    padding: 0;
+    margin:0 ;
+}
+
+html, body {
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+main{
+    height: 68vh;
+    display: grid;
+    grid-template: 40px / repeat(5, 1fr);  
+}
+
+#main-color-one,
+#main-color-two,
+#main-color-three,
+#main-color-four,
+#main-color-five{
+    height: 68vh;
+}
+
+footer{
+    display: grid;
+    grid-template: 40px / repeat(5, 1fr);
+    justify-items: center;
+    font-weight: 500;
+}
+
+header,
+main,
+footer {
+    padding: 1em 2em 0.5em;
+}
+
+header,
+footer{
+    align-items: center;
+    height: 15vh;
+    background-color: whitesmoke;
+    
+}
+
+input#chosen-color {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+#chosen-color::-webkit-color-swatch {
+    border:none;
+    border-radius: 0.5rem;
+}
+
+select{
+    padding: 0.62em 0em 0.62em 1em;
+    width: 40%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #D7BF99;
+    text-shadow: 0px 1px 5px #000;
+    color:white;
+    min-width: 220px;
+}
+
+#btn{
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 0.2em;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0px 1px 5px #000;
+    background: #3E5151;  /* fallback for old browsers */
+    background-color: #D7BF99;
+
+}
+
+#chosen-color {
+     border: none;
+     border-radius: 0.5em;
+     height: 40px;
+     width: 60px;
+     
+}
+
+#btn:hover,
+#btn:focus,
+select:hover,
+select:focus,
+input:hover,
+input:focus  {
+    cursor: pointer;
+    border: none;
+    outline: 0;
+}
